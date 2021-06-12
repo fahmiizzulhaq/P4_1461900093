@@ -23,7 +23,7 @@ class MahasiswaController extends Controller
             ->join('jenis_buku', 'rak_buku.id_jenis_buku', '=', 'jenis_buku.id')
             ->select('rak_buku.id', 'buku.judul', 'buku.tahun_terbit', 'jenis_buku.jenis')
             ->get();
-            return view('buku0069')->with('buku', $buku);
+            return view('file0093')->with('buku', $buku);
     }
 
     /**
@@ -94,7 +94,7 @@ class MahasiswaController extends Controller
 
     public function export_excel()
 	{
-		return Excel::download(new BukuExport, 'Data_1461900069.xlsx');
+		return Excel::download(new BukuExport, 'Data_1461900093.xlsx');
 	}
 
 }

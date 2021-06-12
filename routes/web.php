@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home0069');
+    return view('home0093');
 });
 Route::get('/buku', function () {
-    return view('buku0069');
+    return view('buku0093');
 });
 
 Route::get('/buku', 'App\Http\Controllers\MahasiswaController@index');
